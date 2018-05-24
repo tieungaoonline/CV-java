@@ -28,9 +28,9 @@
 /* ==========================================================================
    01. General Styles
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
-@import url(http://fonts.googleapis.com/css?family=Lato:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
 html, body {
 	overflow-x: hidden;
 }
