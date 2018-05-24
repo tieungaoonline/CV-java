@@ -27,7 +27,9 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
  
         System.out.println("\n-------- LogInterception.postHandle --- ");
         System.out.println("Request URL: " + request.getRequestURL());
-if(request.getRequestURI().indexOf("/vi") >0   || request.getRequestURI().indexOf("/en") >0) {
+if(request.getRequestURI().indexOf("/vi/") >0   || request.getRequestURI().indexOf("/en/") >0) {
+	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+	
 	response.sendRedirect(request.getServletContext().getContextPath());
 }
         // Ở đây, bạn có thể add các attribute vào modelAndView
@@ -39,12 +41,12 @@ if(request.getRequestURI().indexOf("/vi") >0   || request.getRequestURI().indexO
             Object handler, Exception ex) throws Exception {
         System.out.println("\n-------- LogInterception.afterCompletion --- ");
  
-        long startTime = (Long) request.getAttribute("startTime");
-        long endTime = System.currentTimeMillis();
-        System.out.println("Request URL: " + request.getRequestURL());
-        System.out.println("End Time: " + endTime);
- 
-        System.out.println("Time Taken: " + (endTime - startTime));
+//        long startTime = (Long) request.getAttribute("startTime");
+//        long endTime = System.currentTimeMillis();
+//        System.out.println("Request URL: " + request.getRequestURL());
+//        System.out.println("End Time: " + endTime);
+// 
+//        System.out.println("Time Taken: " + (endTime - startTime));
     }
  
 }
