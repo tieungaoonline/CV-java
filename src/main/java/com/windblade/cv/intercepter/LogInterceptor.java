@@ -27,11 +27,11 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
  
         System.out.println("\n-------- LogInterception.postHandle --- ");
         System.out.println("Request URL: " + request.getRequestURL());
-if(request.getRequestURI().indexOf("/vi/") >0   || request.getRequestURI().indexOf("/en/") >0) {
-	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-	
-	response.sendRedirect(request.getServletContext().getContextPath());
-}
+//if(request.getRequestURI().indexOf("/vi/") >0   || request.getRequestURI().indexOf("/en/") >0) {
+//	System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+//	
+//	response.sendRedirect(request.getServletContext().getContextPath());
+//}
         // Ở đây, bạn có thể add các attribute vào modelAndView
         // Và sử dụng nó trong các View (jsp,..)
     }
