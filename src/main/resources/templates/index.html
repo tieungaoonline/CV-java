@@ -208,15 +208,15 @@
                 <!-- About -->
                 <section id="section2">
                     <div class="container">
-                        <h2>About Me</h2>
+                        <h2 th:utext="#{label.section.About.Tittle}" ></h2>
                         <div class="row">
                             <div class="col-sm-3">
                                 <img src="images/man02.png" alt="man" class="img-responsive section-img">
                             </div> <!-- end .col-sm-3 -->
                             <div class="col-sm-9">
-                                <h3 class="small-margin-bottom"  th:utext="#{label.section.About.Tittle}" ></h3>
-                                <h5 th:utext="#{label.section.About.Job} "></h5>
-                                <p th:utext="#{label.section.About.Job.description} " ></p>
+                                <h3 class="small-margin-bottom"  th:utext="#{label.FullName.text}" ></h3>
+                                <h5 th:utext="#{label.section.About.Job}"></h5>
+                                <p th:utext="#{label.section.About.Job.description}" ></p>
                                 <div class="signature"><img src="images/signature.png" alt="signature" class="img-responsive"></div>
                                 <ul class="list-unstyled text-uppercase">
                                     <li th:utext="#{label.section.About.Birthday}" ><b>Date Of Birth:</b> 29 May 1990</li>
