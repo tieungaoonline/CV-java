@@ -196,7 +196,7 @@
                                 <h1 th:utext="#{label.section.Home.description.short}"></h1>
                                 <p th:utext="#{label.section.Home.description.full}"></p>
                                
-                                <p class="button-row"><a href="tel:0904565090" class="button solid-button white" th:utext="#{label.sectionHome.button.call}" ></a><a href="" class="button solid-button purple" th:utext="#{label.download.text}"></a></p>
+                                <p class="button-row"><a href="tel:0904565090" class="button solid-button white" th:utext="#{label.section.Home.button.call}" ></a><a href="" class="button solid-button purple" th:utext="#{label.download.text}"></a></p>
                             </div> <!-- end .col-sm-7 -->
                             <div class="col-sm-5 vertical-center">
                                 <img src="images/man01.png" alt="man" class="img-responsive section-img">
@@ -214,17 +214,17 @@
                                 <img src="images/man02.png" alt="man" class="img-responsive section-img">
                             </div> <!-- end .col-sm-3 -->
                             <div class="col-sm-9">
-                                <h3 class="small-margin-bottom">Pham Ngoc Quynh</h3>
-                                <h5>Developing, Progamming & Supporter</h5>
-                                <p>With my experience, I will confidently make you satisfied</p>
+                                <h3 class="small-margin-bottom"  th:utext="#{label.section.About.Tittle}" ></h3>
+                                <h5 th:utext="#{label.section.About.Job} "></h5>
+                                <p th:utext="#{label.section.About.Job.description} " ></p>
                                 <div class="signature"><img src="images/signature.png" alt="signature" class="img-responsive"></div>
                                 <ul class="list-unstyled text-uppercase">
-                                    <li><b>Date Of Birth:</b> 29 May 1990</li>
-                                    <li><b>Phone:</b> 090-4565-090</li>
-                                    <li><b>Email:</b> tieugiaoxm@gmail.com</li>
-                                    <li><b>Address:</b> 302 - B7 - TaQuangBuu Str, HaiBaTrung Dist, Hanoi, Vietnam</li>
-                                    <li><b>Facebook</b> FB.ME/Vn.ChemGio</li>
-                                    <li><b>Skype</b> tieungaoonline</li>
+                                    <li th:utext="#{label.section.About.Birthday}" ><b>Date Of Birth:</b> 29 May 1990</li>
+                                    <li th:utext="#{label.section.About.Phone}"><b>Phone:</b> 090-4565-090</li>
+                                    <li th:utext="#{label.section.About.Email}"><b>Email:</b> tieugiaoxm@gmail.com</li>
+                                    <li th:utext="#{label.section.About.Address}"><b>Address:</b> 302 - B7 - TaQuangBuu Str, HaiBaTrung Dist, Hanoi, Vietnam</li>
+                                    <li th:utext="#{label.section.About.Facebook}"><b>Facebook</b> FB.ME/Vn.ChemGio</li>
+                                    <li th:utext="#{label.section.About.Skyper}"><b>Skyper</b> tieungaoonline</li>
                                 </ul> <!-- end .list-unstyled -->
                                 <div class="spacer"></div>
                                 <h3>What I'm Doing</h3>
