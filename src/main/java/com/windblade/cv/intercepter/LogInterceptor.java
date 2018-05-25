@@ -39,7 +39,7 @@ public class LogInterceptor extends HandlerInterceptorAdapter {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, //
             Object handler, Exception ex) throws Exception {
-        System.out.println("\n-------- LogInterception.afterCompletion --- ");
+//        System.out.println("\n-------- LogInterception.afterCompletion --- ");
  
 //        long startTime = (Long) request.getAttribute("startTime");
 //        long endTime = System.currentTimeMillis();
